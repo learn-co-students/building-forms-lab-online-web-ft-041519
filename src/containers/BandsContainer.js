@@ -4,7 +4,9 @@ class BandsContainer extends Component {
   render() {
     return(
       <div>
-        BandsContainer
+        <ul>
+        {state.map(band => <li>{band.name}</li>)}
+        </ul>
       </div>
     )
   }
