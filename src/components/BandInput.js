@@ -1,7 +1,7 @@
 // Add BandInput component
 import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { addBand } from '../actions/bands'
+
+
 
 class BandInput extends Component {
 
@@ -17,7 +17,7 @@ class BandInput extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault()
-    const band = { ...this.state, id: uuid() }
+    const band = { ...this.state}
     this.props.addBand(band)
     this.setState({
       name: ''
@@ -36,4 +36,4 @@ class BandInput extends Component {
   }
 }
 
-export default connect({ addBand })(BandInput)
+export default BandInput
