@@ -5,7 +5,7 @@ class BandsContainer extends Component {
     return(
       <div>
         <ul>
-        {state.map(band => <li>{band.name}</li>)}
+        {/* {state.map(band => <li>{band.name}</li>)} */}
         </ul>
       </div>
     )
